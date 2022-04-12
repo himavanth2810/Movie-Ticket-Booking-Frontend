@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const apiUrl = "http://localhost:8080";
+const apiUrl = "http://localhost:8000";
 
 window.addEventListener("load",()=>{
     body.classList.add("visible");
@@ -28,6 +28,22 @@ document.querySelector(".noaccount").addEventListener("click", function(){
     document.querySelector(".popup-login").style.display= "none";
 });
 
+document.querySelector(".authButton1").addEventListener("click",function(){
+    location.href = "http://localhost:8000/auth/google";
+});
+
+document.querySelector(".authButton2").addEventListener("click",function(){
+    location.href = "http://localhost:8000/auth/facebook";
+});
+
+document.querySelector(".authButton3").addEventListener("click",function(){
+    location.href = "http://localhost:8000/auth/google";
+});
+
+document.querySelector(".authButton4").addEventListener("click",function(){
+    location.href = "http://localhost:8000/auth/facebook";
+});
+
 const signIn = document.querySelector(".popup-login");
 
 signIn.addEventListener("submit",(event)=>{
@@ -51,7 +67,7 @@ signIn.addEventListener("submit",(event)=>{
            const {token} = data;
           if(token){
               localStorage.setItem("jwt", token);
-              location.href = "/Movie Page/movie.html";
+              location.href="/Movie Page/movie.html";
           }
           else{
               alert("SignIn Again");

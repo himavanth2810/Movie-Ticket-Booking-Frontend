@@ -1,314 +1,330 @@
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-  }
-  .bgImage {
-    background-image: url(background.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    filter: blur(4px);
-    left: 0%;
-    right: 0%;
-    position: fixed;
-    z-index: -1;
-  }
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.bgImage {
+  background-image: url(background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  filter: blur(4px);
+  left: 0%;
+  right: 0%;
+  position: fixed;
+  z-index: -1;
+}
+
+.navbar {
+  padding: 10px;
+  margin: 5px;
+  filter: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: "ABeeZee", sans-serif;
+}
+.logo {
+  color: #c41515;
+  margin-bottom: 40vh;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  background-color: white;
+  padding: 14px;
+  border-radius: 8px;
+  text-shadow: 1.5px 1px black;
+}
+.button {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: none;
+  color: white;
+  font-size: 13.5px;
+  font-family: "ABeeZee", sans-serif;
+  transition: 0.3s;
+  padding: 13px;
+  border-radius: 07px;
+}
+.button:hover {
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+.taglinebox {
+  position: relative;
+  margin-top: 300px;
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-200%);
+}
+.tagline {
+  padding: 15px;
+  font-family: "ABeeZee", sans-serif;
+  color: white;
+  background-color: rgba(13, 133, 133, 0.707);
+  border-bottom: transparent;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.signInbox {
+  margin-top: 17px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  background-color: #1f8a0e;
+}
+.signup {
+  background-color: #c41515;
+}
+.boxButton {
+  margin-inline: 40px;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  width: 122.5px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+  mix-blend-mode: normal;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.25),
+    inset 01px 5px 6px rgba(0, 0, 0, 0.25);
+  font-family: "ABeeZee", sans-serif;
+  border: 1px solid black;
+}
+.boxButton:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 23px;
+}
+
+.popup-login {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-login-content {
+  height: 550px;
+  width: 450px;
+  background: rgba(250, 247, 247, 0.782);
+  padding: 50px;
+  border-radius: 07px;
+  position: relative;
+}
+.popup-login-content .icon {
+  width: 40px;
+  height: 35px;
+}
+input {
+  font-size: 20px;
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+.popup-login-content .close1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.authButton {
+  /* margin: 60%; */
+  /* margin-top: 100%; */
+  background-color: rgba(228, 33, 33, 0.98);
+  border: 1px solid black;
+  margin-top: 0px;
+  color: white;
+  font-size: 20.5px;
+  font-family: "ABeeZee", sans-serif;
+  padding: 13px;
+  border-radius: 07px;
+}
+.authButton1 ,.authButton2, .authButton3, .authButton4{
+  width: 35%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  font-size: 22px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.copyright {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.popup-signup {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-signup-content {
+  height: 650px;
+  width: 500px;
+  background: rgba(250, 247, 247, 0.782);
+  padding: 70px;
+  border-radius: 07px;
+  position: absolute;
+}
+
+.popup-signup-content input {
+  font-size: 17px;
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+
+.popup-signup-content .close2 {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup-signup-content .icon {
+  margin-top: 8px;
+  width: 50px;
+  height: 50px;
   
-  .navbar {
-    padding: 10px;
-    margin: 5px;
-    filter: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-family: "ABeeZee", sans-serif;
-  }
-  .logo {
-    color: #c41515;
-    margin-bottom: 40vh;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    background-color: white;
-    padding: 14px;
-    border-radius: 8px;
-    text-shadow: 1.5px 1px black;
-  }
+}
+
+
+@media only screen and (max-width: 540px) {
   .button {
-    margin: 10px;
+    margin: 5px;
     background-color: rgba(0, 0, 0, 0.7);
-    filter: none;
-    color: white;
-    font-size: 13.5px;
-    font-family: "ABeeZee", sans-serif;
-    transition: 0.3s;
-    padding: 13px;
-    border-radius: 07px;
-  }
-  .button:hover {
-    font-weight: bolder;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .taglinebox {
-    position: relative;
-    margin-top: 300px;
-    /* background-color: rgba(0, 0, 0, 0); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-200%);
+    font-size: 9px;
+    padding: 10px;
+    border-radius: 05px;
   }
   .tagline {
-    padding: 15px;
-    font-family: "ABeeZee", sans-serif;
-    color: white;
-    background-color: rgba(13, 133, 133, 0.707);
-    border-bottom: transparent;
-    border-radius: 7px;
-    text-align: center;
-  }
-  
-  .signInbox {
-    margin-top: 17px;
-    background-color: rgba(0, 0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .login {
-    background-color: #1f8a0e;
-  }
-  .signup {
-    background-color: #c41515;
+    font-size: 10px;
   }
   .boxButton {
-    margin-inline: 40px;
-    padding: 12px;
-    font-size: 18px;
-    color: white;
-    width: 122.5px;
-    text-align: center;
-    transition: 0.3s;
-    border-radius: 5px;
-    mix-blend-mode: normal;
-    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.25),
-      inset 01px 5px 6px rgba(0, 0, 0, 0.25);
-    font-family: "ABeeZee", sans-serif;
-    border: 1px solid black;
+    margin-inline: 5vw;
+    padding: 10px;
+    font-size: 13px;
+    width: 10vh;
   }
-  .boxButton:hover {
-    cursor: pointer;
-    font-weight: bolder;
-    font-size: 23px;
-  }
-  
-  .popup-login {
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
   .popup-login-content {
-    height: 520px;
-    width: 440px;
-    background: rgba(250, 247, 247, 0.782);
-    padding: 50px;
-    border-radius: 07px;
-    position: relative;
+    height: 370px;
+    width: 260px;
+    padding: 15px;
   }
   .popup-login-content .icon {
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   input {
-    font-size: 20px;
-    margin: 20px auto;
-    display: block;
-    width: 100%;
+    font-size: 12px;
+    margin: 10px 0px;
     padding: 12px;
-    border: 1.5px solid black;
-    border-radius: 8px;
+    border-radius: 5px;
   }
   .popup-login-content .close1 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #fff;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+    height: 17px;
+    width: 17px;
   }
   .authButton {
-    /* margin: 60%; */
-    /* margin-top: 100%; */
-    background-color: rgba(228, 33, 33, 0.98);
-    border: 1px solid black;
-    margin-top: 0px;
-    color: white;
-    font-size: 20.5px;
-    font-family: "ABeeZee", sans-serif;
-    padding: 13px;
-    border-radius: 07px;
+    font-size: 12px;
+    padding: 9px;
+    border-radius: 05px;
   }
-  
   .authButton:hover {
-    font-size: 22px;
-    cursor: pointer;
+    font-size: 13.5px;
   }
   .bottom {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
+    margin-top: 12px;
+    font-size: 10px;
   }
   .copyright {
     margin-top: 5px;
+    font-size: 9px;
+  }
+  .or{
     font-size: 12px;
-  }
-  .popup-signup {
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .popup-signup-content {
-    height: 570px;
-    width: 500px;
-    background: rgba(250, 247, 247, 0.782);
-    padding: 70px;
-    border-radius: 07px;
-    position: absolute;
-  }
-  
-  .popup-signup-content input {
-    font-size: 17px;
-    margin: 20px auto;
-    display: block;
-    width: 100%;
-    padding: 11px;
-    border: 1.5px solid black;
-    border-radius: 8px;
-  }
-  
-  .popup-signup-content .close2 {
-    position: absolute;
-    top: 30px;
-    right: 25px;
-    background: #fff;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .popup-signup-content .icon {
-    margin-top: 8px;
-    width: 50px;
-    height: 50px;
+    margin-bottom: 5%;
     
   }
-  
-  
-  @media only screen and (max-width: 540px) {
-    .button {
-      margin: 5px;
-      background-color: rgba(0, 0, 0, 0.7);
-      font-size: 9px;
-      padding: 10px;
-      border-radius: 05px;
-    }
-    .tagline {
-      font-size: 10px;
-    }
-    .boxButton {
-      margin-inline: 5vw;
-      padding: 10px;
-      font-size: 13px;
-      width: 10vh;
-    }
-    .popup-login-content {
-      height: 340px;
-      width: 230px;
-      padding: 15px;
-    }
-    .popup-login-content .icon {
-      width: 30px;
-      height: 30px;
-    }
-    input {
-      font-size: 12px;
-      margin: 10px 0px;
-      padding: 12px;
-      border-radius: 5px;
-    }
-    .popup-login-content .close1 {
-      height: 17px;
-      width: 17px;
-    }
-    .authButton {
-      font-size: 12px;
-      padding: 9px;
-      border-radius: 05px;
-    }
-    .authButton:hover {
-      font-size: 13.5px;
-    }
-    .bottom {
-      margin-top: 12px;
-      font-size: 10px;
-    }
-    .copyright {
-      margin-top: 5px;
-      font-size: 9px;
-    }
-    .popup-signup .popup-signup-content {
-      height: 450px;
-      width: 250px;
-      padding: 20px;
-    }
-  
-    .popup-signup-content input {
-      font-size: 12px;
-      margin: 12px auto;
-      padding: 11px;
-      border-radius: 6px;
-    }
-  
-    .popup-signup-content .close2 {
-      top: 15px;
-      right: 15px;
-      height: 16px;
-      width: 16px;
-    }
-  
-    .popup-signup-content .icon {
-      margin-top: 10px;
-      width: 30px;
-      height: 30px;
-    }
-    .logo {
-      color: #c41515;
-      font-size: 15px;
-      padding: 10px;
-      margin-bottom: 38vh;
-      border-radius: 8px;
-      text-shadow: 0.5px 0.8px black;
-    }
+  .marginset{
+    font-size: 16px;
   }
+  .authButton1, .authButton2, .authButton3, .authButton4{
+    margin-bottom: 3.6%;
+  }
+  .popup-signup .popup-signup-content {
+    height: 480px;
+    width: 280px;
+    padding: 20px;
+  }
+
+  .popup-signup-content input {
+    font-size: 12px;
+    margin: 12px auto;
+    padding: 11px;
+    border-radius: 6px;
+  }
+
+  .popup-signup-content .close2 {
+    top: 15px;
+    right: 15px;
+    height: 16px;
+    width: 16px;
+  }
+
+  .popup-signup-content .icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .logo {
+    color: #c41515;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 38vh;
+    border-radius: 8px;
+    text-shadow: 0.5px 0.8px black;
+  }
+}
