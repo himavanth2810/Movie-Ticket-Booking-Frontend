@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 .bgImage {
-  background-image: url(background.jpg);
+  background-image: url(bgimage.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  filter: blur(4px);
+  width: 100vw;
+  filter: blur(1px);
   left: 0%;
-  right: 0%;
+  right: 4%;
   position: fixed;
   z-index: -1;
 }
@@ -27,11 +28,11 @@
 }
 .logo {
   color: #c41515;
-  margin-bottom: 40vh;
-  font-size: 28px;
+  margin-bottom: 85vh;
+  font-size: 30px;
   font-weight: bold;
   position: absolute;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 14px;
   border-radius: 8px;
   text-shadow: 1.5px 1px black;
