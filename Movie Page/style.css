@@ -1,0 +1,426 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #242333;
+    overflow-x: hidden;
+  }
+  .title{
+    font-size: 15px;
+    color: red;
+  }
+  .navbar {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row; */
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+  }
+  
+  .logo {
+    width: 120px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s;
+  }
+  .logout {
+    background-color: #e62b4d;
+    margin-left: 20px;
+  }
+  .profile {
+    background-color: rgb(34, 185, 34);
+  }
+  .button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+  .wrapper {
+    max-width: 100vw;
+    text-align: center;
+  }
+  .wrapper .search-input {
+    background: #242333;
+    width: 100vw;
+  }
+  .search-input input {
+    height: 45px;
+    outline: none;
+    border: rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+  }
+  .search-input.active input {
+    border-radius: 5px 5px 0 0;
+  }
+  .search-input .autocom-box {
+    padding: 0;
+    opacity: 0;
+    pointer-events: auto;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .search-input.active .autocom-box {
+    padding: 3px 2px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .autocom-box li {
+    list-style: none;
+    padding: 1px 1px;
+    display: none;
+    color:rgb(248, 240, 240);
+    width: 100%;
+    cursor: default;
+    border-radius: 4px;
+  }
+  .search-input.active .autocom-box li {
+    display: block;
+    color: white;
+  }
+  .autocom-box li:hover {
+    background: #ec7878;
+  }
+  .search-input .icon {
+    position: sticky;
+    top: 12px;
+    right: 2px;
+    height: 32px;
+    width: 16px;
+    /* text-align:center; */
+    line-height: 50px;
+    font-size: 25px;
+    /* background: rgb(212, 209, 209,0.9); */
+    cursor: pointer;
+  }
+  
+  .container {
+    background-color: white;
+    width: 100vw;
+    height: 74vh;
+    overflow: hidden;
+  }
+  .sliderbox {
+    width: 265vw;
+    position: absolute;
+    animation-name: sliderboxAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes sliderboxAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      transform: translateX(-61.000%);
+    }
+  }
+  .sliderbox img {
+    float: left;
+  }
+  .poster {
+    width: 670px;
+    height: 400px;
+    transition: 0.3s;
+    padding: 3px 7px;
+    margin-top: 12px;
+  }
+  
+  .poster:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+      rgba(0, 0, 0, 0.12) 1px -12px 30px, rgba(0, 0, 0, 0.12) 1px 4px 6px,
+      rgba(0, 0, 0, 0.17) 1px 12px 13px, rgba(0, 0, 0, 0.09) 1px -3px 5px;
+    border: 10px solid rgb(0, 0, 0);
+  }
+  
+  .search-input {
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+    margin-top: 30px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 1000%; */
+  }
+  .search-input input {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 500px;
+    padding: 10px;
+    /* margin-left: 55vw; */
+  
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .search-input img {
+    margin: top 2px;
+    width: 35px;
+    height: 30px;
+  }
+  
+  .search-input .searchButton {
+    cursor: pointer;
+  }
+  
+  .nowShowing {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 4px solid black;
+  }
+  
+  .nowShowingText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: rgb(238, 6, 6);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .container-2 {
+    margin-top: 50px;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 45px;
+    margin-bottom: 75px;
+  }
+  
+  .card {
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 16px;
+  }
+  
+  .bookButton {
+    margin-top: 20px;
+    background-color: rgb(221, 21, 21);
+    color: rgb(248, 240, 240);
+    border-radius: 7px;
+    padding: 5px;
+  }
+  .bookkarlo {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .card-1 .card-1-inner,
+  .card-2 .card-2-inner,
+  .card-3 .card-3-inner,
+  .card-4 .card-4-inner,
+  .card-5 .card-5-inner,
+  .card-6 .card-6-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-1-inner.is-flipped,
+  .card-2-inner.is-flipped,
+  .card-3-inner.is-flipped,
+  .card-4-inner.is-flipped,
+  .card-5-inner.is-flipped,
+  .card-6-inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-1-part,
+  .card-2-part,
+  .card-3-part,
+  .card-4-part,
+  .card-5-part,
+  .card-6-part {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-1-back,
+  .card-2-back,
+  .card-3-back,
+  .card-4-back,
+  .card-5-back,
+  .card-6-back {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom right, #a1ffce, #faffd1);
+    color: black;
+    font-size: 20px;
+    transform: rotateY(180deg);
+  }
+  .fliping {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .buttom {
+    background-color: #333338;
+    padding: 15px;
+    color: #7f7f7f;
+  }
+  .heading {
+    color: #a5a5a5;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .navbar {
+      padding: 15px;
+    }
+  
+    .logo {
+      width: 110px;
+      overflow: hidden;
+      padding: 20px;
+    }
+    .button {
+      padding: 9px;
+      font-size: 9px;
+      border-radius: 8px;
+    }
+  
+    .nowShowingText {
+      margin-top: 6px;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    .search-input input {
+      font-size: 15px;
+      height: 32px;
+      width: 55vw;
+    }
+  
+    .search-input img {
+      margin-bottom: 5px;
+      width: 25px;
+      height: 20px;
+    }
+    .container {
+      height: 34vh;
+    }
+    .poster {
+      width: 100vw;
+      height: 30vh;
+      transition: 0.1s;
+      padding: 1px 4px;
+      margin-top: 12px;
+    }
+    .sliderbox {
+      width: 1050vw;
+      animation-duration: 120s;
+    }
+  
+    .container-2 {
+      margin-top: 45px;
+      margin-left: 12px;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .card:hover {
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 15px;
+    }
+  
+    .bookButton {
+      border-radius: 5px;
+      padding: 3px;
+    }
+  
+    .bookkarlo {
+      font-size: 7px;
+      text-decoration: none;
+      color: white;
+    }
+    .flipimg {
+      width: 27vw;
+      height: 31vh;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6,
+    .card-7,
+    .card-8,
+    .card-9 {
+      width: 27vw;
+      height: 31vh;
+    }
+  
+    .card-1-back,
+    .card-2-back,
+    .card-3-back,
+    .card-4-back,
+    .card-5-back,
+    .card-6-back,
+    .card-7-back,
+    .card-8-back,
+    .card-9-back {
+      padding: 20px;
+      font-size: 10px;
+    }
+  
+    @keyframes sliderboxAnimation {
+      100% {
+        transform: translateX(-66.6666%);
+      }
+    }
+  
+    .buttom {
+      padding: 15px;
+      font-size: 12px;
+    }
+    .heading {
+      color: #fdfdfd;
+      font-size: 13px;
+    }
+  }
