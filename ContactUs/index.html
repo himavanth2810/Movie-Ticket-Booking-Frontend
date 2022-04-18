@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact Us Form</title>
+       <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="container">
+      <div class="text">Contact Us</div>
+      <div id="error_message"></div>
+      <form id="myform">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" id="name" required>
+               <div class="underline"></div>
+               <label for="">Full Name</label>
+            </div>
+            <div class="input-data">
+               <input type="text" id="subject" required>
+               <div class="underline"></div>
+               <label for="">Subject</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" id="email" required>
+               <div class="underline"></div>
+               <label for="">Email Address</label>
+            </div>
+            <div class="input-data">
+               <input type="number" id="phone" required>
+               <div class="underline"></div>
+               <label for="" class="phone">Phone</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data textarea">
+               <textarea rows="8" cols="80" id="message" required></textarea>
+               <br />
+               <div class="underline"></div>
+               <label for="">Write your message</label>
+              <button class="button">Submit </button>
+               
+            <br />
+      </form>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

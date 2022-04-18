@@ -28,6 +28,10 @@ document.querySelector(".noaccount").addEventListener("click", function(){
     document.querySelector(".popup-login").style.display= "none";
 });
 
+document.querySelector(".contactUs").addEventListener("click", function(){
+    location.href = "./ContactUs/index.html";
+});
+
 document.querySelector(".authButton1").addEventListener("click",function(){
     location.href = "http://localhost:8000/auth/google";
 });
