@@ -1,9 +1,9 @@
 var theatres = {
     Mumbai: ['INOX R-City Ghatkopar', 'Miraj Anupam Cinemas', 'Prithvi Theatre', 'Maratha Mandir Cinema', 'Regal Theatre'],
-    Chennai: ['Sathyam Cinemas, Peters Colony', 'Luxe Cinemas, Velachary', 'Escape Multiplex, Royapettah', 'INOX Chennai, Mylapore'],
+    Chennai: ['Sathyam Cinemas, Peters Colony', 'Escape Multiplex, Royapettah', 'INOX Chennai, Mylapore'],
     Telangana: ['Prasads Cinema', 'AMB Cinemas', 'PVR Forum Sujana Mall', 'RK Cineplex', 'LV Prasad Theatre', 'S2 Cinemas, Mallapur', 'PVR Inorbit Cyberabad'],
-    Delhi: ['PVR Anupam', 'INOX Cinemas, Janakpuri', 'M2k Cinemas', 'PVR - Fun City Mall', 'Movietime - North Square Mall'],
-    Banglore: ['PVR - Orion Mall', 'Innovative Multiplex', 'Urvashi Theatre', 'Gopalan Cinemas', 'Lakshmi Theatre', 'Rockline Cinemas', 'INOX - Galleria Mall']
+    Delhi: ['PVR Anupam', 'M2k Cinemas', 'PVR - Fun City Mall', 'Movietime - North Square Mall'],
+    Banglore: ['PVR - Orion Mall', 'Urvashi Theatre', 'Gopalan Cinemas', 'Lakshmi Theatre', 'INOX - Galleria Mall']
 }
 
 var main = document.getElementById('main_menu');

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0);
+  }
+  
+ body {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+ .visible {
+    opacity: 1;
+ }
+
+ .heading {
+    font-size: 22px;
+    color: solid black;
+    font-weight: bold;
+ }
+
+ .bgImage {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bgimage.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(1px);
+    left: 0%;
+    right: 4%;
+    position: fixed;
+    z-index: -1;
+ }
+  
+ .showtime-container {
+    width: 360px;
+    height: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(128, 191, 107, 0.4);
+    border: 1px solid rgb(96, 107, 236);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .custom-select {
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+    padding: 7px;
+    text-align: center;
+ }
+
+ .selectDate input {
+    border-radius: 10px;
+    width: 15vw;
+    height: 5vh;
+  }
+
+ .authButton {
+    margin-inline: 40px;
+    padding: 12px;
+    font-size: 18px;
+    color: red;
+    width: 122.5px;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 5px;
+    mix-blend-mode: normal;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.25),
+      inset 01px 5px 6px rgba(0, 0, 0, 0.25);
+    font-family: "ABeeZee", sans-serif;
+    border: 1px solid black;
+ }
+  
+ .authButton:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 23px;
+ }

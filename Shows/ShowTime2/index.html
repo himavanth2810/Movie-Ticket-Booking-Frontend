@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet"> <link rel="styleSheet" href="style.css">
+    <title>RRR</title>
+</head>
+<body>
+    <div class="bgImage"></div>
+    <div class="showtime-container">  
+        <div class="heading">Show Details</div>
+        <div class="col-md-3">
+            <select name="city" id="main_menu" class="custom-select">
+                <option value="select">-- Select City --</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+        </div>
+            <div class="col-md-3">
+                <select name="theatre" id="sub_menu" class="custom-select">
+                    <option value="select">-- Select Theatre --</option>
+                </select>
+            </div>
+            <div class="selectDate common" ><input value="Date" type="date" id="dateInput" min="2022-03-25" max="2022-04-30">
+            </div>
+            <div class="col-md-3">
+                <select name="time" id="sub2_menu" class="custom-select">
+                    <option value="select">-- Select ShowTime --</option>
+                    <option value="Morning Show">11:00 AM</option>
+                    <option value="Matinee Show">2:00 PM</option>
+                    <option value="First Show">6:00 PM</option>
+                    <option value="Night Show">9:00 PM</option>
+                </select>
+            </div>
+            <button class="authButton" src="/Movie Page/movie.html">BOOK</button> <br> <br>
+    </div> 
+    
+   <script src="show.js"></script>
+</body>
+</html>
