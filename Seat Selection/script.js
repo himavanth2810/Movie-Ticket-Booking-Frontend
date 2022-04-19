@@ -6,7 +6,7 @@ const total = document.getElementById('total');
 
 
 document.querySelector(".Paynow").addEventListener("click",function(){
-  location.href = "/payment page/payment.html";
+  location.href = "./Payment Page/payment.html";
 });
 
 populateUI();
