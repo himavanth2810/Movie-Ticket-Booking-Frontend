@@ -70,4 +70,4 @@ card9.addEventListener('click', function() {
 
 document.querySelector(".logout").addEventListener("click",function(){
     location.href = "/index.html";
-})
+});
