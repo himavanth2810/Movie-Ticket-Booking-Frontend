@@ -4,7 +4,7 @@ body {
     padding: 8px;
     background-color: #242333;
   }
-  
+
   h1 {
     text-align: center;
     color: rgb(216, 14, 14);
@@ -23,8 +23,8 @@ body {
     margin-left: 35%;
     margin-right: 35%;
   }
-  
-  
+
+
   input[type="text"] {
     width: 25vw;
     margin-bottom: 20px;
