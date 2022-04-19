@@ -4,11 +4,6 @@ const seats = document.querySelectorAll('.row .seat:not(.occupied');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 
-
-document.querySelector(".Paynow").addEventListener("click",function(){
-  location.href = "./Payment Page/payment.html";
-});
-
 populateUI();
 let ticketPrice = 250;
 
@@ -39,6 +34,9 @@ function populateUI() {
         seat.classList.add('occupied');
       }
     });
+  }
+  else{
+    alert('Please select a seat');
   }
 }
 
