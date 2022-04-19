@@ -71,7 +71,7 @@ signIn.addEventListener("submit",(event)=>{
            const {token} = data;
           if(token){
               localStorage.setItem("jwt", token);
-              location.href="/Movie Page/movie.html";
+              location.href="./Movie Page/movie.html";
           }
           else{
               alert("SignIn Again");
@@ -111,7 +111,7 @@ signUp.addEventListener("submit",(event)=>{
          const {token} = data;
         if(token){
             localStorage.setItem("jwt", token);
-            location.href="/Movie Page/movie.html";
+            location.href="./Movie Page/movie.html";
         }
         else{
             alert("SignUp Again");
