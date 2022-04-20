@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://movie-ticket-2810.herokuapp.com";
 
 window.addEventListener("load",()=>{
     body.classList.add("visible");
@@ -33,19 +33,19 @@ document.querySelector(".contactUs").addEventListener("click", function(){
 });
 
 document.querySelector(".authButton1").addEventListener("click",function(){
-    location.href = "http://localhost:8000/auth/google";
+    location.href = "https://movie-ticket-2810.herokuapp.com/auth/google";
 });
 
 document.querySelector(".authButton2").addEventListener("click",function(){
-    location.href = "http://localhost:8000/auth/facebook";
+    location.href = "https://movie-ticket-2810.herokuapp.com/auth/facebook";
 });
 
 document.querySelector(".authButton3").addEventListener("click",function(){
-    location.href = "http://localhost:8000/auth/google";
+    location.href = "https://movie-ticket-2810.herokuapp.com/auth/google";
 });
 
 document.querySelector(".authButton4").addEventListener("click",function(){
-    location.href = "http://localhost:8000/auth/facebook";
+    location.href = "https://movie-ticket-2810.herokuapp.com/auth/facebook";
 });
 
 const signIn = document.querySelector(".popup-login");
@@ -71,7 +71,7 @@ signIn.addEventListener("submit",(event)=>{
            const {token} = data;
           if(token){
               localStorage.setItem("jwt", token);
-              location.href="./Movie Page/movie.html";
+              location.href="./Movie Page/index.html";
           }
           else{
               alert("SignIn Again");
@@ -111,7 +111,7 @@ signUp.addEventListener("submit",(event)=>{
          const {token} = data;
         if(token){
             localStorage.setItem("jwt", token);
-            location.href="./Movie Page/movie.html";
+            location.href="./Movie Page/index.html";
         }
         else{
             alert("SignUp Again");
