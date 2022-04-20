@@ -1,0 +1,132 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.landing
+{
+   height: 42vh;
+   background-image: url("./bgImage-1.jpg");
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.aboutMovieTicketBooking
+{
+    /* opacity: 1; */
+    background-color:rgba(0,0,0,0.8);
+    padding: 12px;
+    border-radius: 8px;
+    color: rgb(212, 9, 9);
+    box-shadow: 1px  1px white;
+}
+.text
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    padding: 20px;
+    margin: 12px;
+    color: rgb(243, 243, 243);
+    background-color: rgba(0,0,0,0.7);
+}
+.founders{
+    font-size: 30px;
+    /* color: rgb(206, 16, 16); */
+    margin-top: 40px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 70px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+.name
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 150;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-top: 2vh;
+    margin-bottom: 20px;
+
+}
+
+.nikhil , .himavanth , .tina
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   background-color: #242333;
+
+}
+
+.description
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    color: white;
+    font-weight:125;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+@media only screen and ( max-width:700px ) {
+    
+    .landing
+    {
+       height: 32vh;
+      
+    }   
+
+.aboutMovieTicketBooking
+{
+    padding: 12px;
+    font-size: 10px;
+    border-radius: 8px;
+}
+.text
+{
+    font-size: 10px;
+    padding: 15px;
+   
+}
+.founders{
+    font-size: 23px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+   
+
+}
+.name
+{
+    font-weight: 150;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 12px;
+    background-color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.description
+{
+    font-size: 12px;
+    color: white;
+    font-weight:125;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+    
+}
