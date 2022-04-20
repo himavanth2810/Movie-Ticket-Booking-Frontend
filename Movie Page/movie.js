@@ -1,9 +1,17 @@
 const body = document.querySelector("body");
 const container= document.querySelector(".container-2");
+const logout= document.querySelector(".logout");
 const input = document.querySelector("input");
 
 window.addEventListener("load", () => {
     body.classList.add("visible");
+});
+
+const token = localStorage.getItem("jwt");
+
+logout.addEventListener("click", () => {
+  localStorage.removeItem("jwt");
+  location.href = "/MOVIE TICKET BOOKING - FRONTEND/index.html";
 });
 
 const card1= document.querySelector('.card-1-inner');
@@ -60,8 +68,4 @@ const card9= document.querySelector('.card-9-inner');
 
 card9.addEventListener('click', function() {
     card9.classList.toggle('is-flipped');
-});
-
-document.querySelector(".logout").addEventListener("click",function(){
-    location.href = "/index.html";
 });
