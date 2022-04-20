@@ -1,12 +1,6 @@
 const body = document.querySelector("body");
 const container= document.querySelector(".container-2");
 const input = document.querySelector("input");
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector("a");
-let webLink;
 
 window.addEventListener("load", () => {
     body.classList.add("visible");
