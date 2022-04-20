@@ -37,7 +37,7 @@ updateMovieButton.addEventListener("click", () => {
   const language = Movielanguage.value;
 
   if (token) {
-    fetch(`${apiUrl}/note/update/${noteId}`, {
+    fetch(`${apiUrl}/auth/update/${movieId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ updateMovieButton.addEventListener("click", () => {
 
 deleteMovieButton.addEventListener("click", () => {
   if (token) {
-    fetch(`${apiUrl}/note/delete/${noteId}`, {
+    fetch(`${apiUrl}/auth/delete/${movieId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
