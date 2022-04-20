@@ -2,6 +2,7 @@ const body = document.querySelector("body");
 const container= document.querySelector(".container-2");
 const logout= document.querySelector(".logout");
 const input = document.querySelector("input");
+const poster3 = document.querySelector(".poster3");
 
 window.addEventListener("load", () => {
     body.classList.add("visible");
@@ -11,7 +12,11 @@ const token = localStorage.getItem("jwt");
 
 logout.addEventListener("click", () => {
   localStorage.removeItem("jwt");
-  location.href = "/MOVIE TICKET BOOKING - FRONTEND/index.html";
+  location.href = "/";
+});
+
+poster3.addEventListener('click', function(){
+    alert("Movie Coming Soon In Theatres.....");
 });
 
 const card1= document.querySelector('.card-1-inner');
