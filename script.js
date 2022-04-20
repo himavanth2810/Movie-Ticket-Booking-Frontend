@@ -32,6 +32,10 @@ document.querySelector(".contactUs").addEventListener("click", function(){
     location.href = "./ContactUs/index.html";
 });
 
+document.querySelector(".aboutUs").addEventListener("click", function(){
+    location.href = "./AboutUs/aboutUs.html";
+})
+
 document.querySelector(".authButton1").addEventListener("click",function(){
     location.href = "https://movie-ticket-2810.herokuapp.com/auth/google";
 });
